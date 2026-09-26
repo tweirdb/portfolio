@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgb(71, 37, 93) 0%, rgb(0, 0, 0) 100%);
+  color: rgb(218, 196, 255);
+  font-family: Verdana, sans-serif;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.decoracaofundo {
+  opacity: 0.4;
+
+}
+#vermais1 {
+    background-color: rgb(71, 37, 93);
+    color: white;
+    width: 340px;
+    height: 54px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-family: "Poppins", sans-serif;
+}
+.mover {
+  width: min(300px, 75vw);
+  display: block;
+  animation: 3s slideLeft ease-out;
+}
+
+.texto-foto {
+  color: rgb(218, 196, 255);
+  animation: 3s slideLeft ease-out;
+}
+
+.dados {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 12px 0 0;
+}
+
+.texto-final {
+  overflow: hidden;
+  border-right: 2px solid rgb(23, 48, 58);
+  width: 0;
+  white-space: nowrap;
+  font-size: 20px;
+  animation: typing 3s steps(100, end) forwards, blink-caret 3s step-end infinite;
+}
+
+.titulo {
+  font-family: "Dancing Script", cursive;
+  font-size: 90px;
+  margin: 20px 0 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 56ch;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
