@@ -1,9 +1,11 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(rgb(71, 37, 93) 0%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(rgb(71, 37, 93) 0%, rgb(29, 18, 42), rgb(0, 0, 0) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
   color: rgb(218, 196, 255);
-  font-family: Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -11,9 +13,31 @@ body {
   justify-content: center;
   text-align: center;
 }
+.retangulosobremim {
+  background-color: rgb(0, 0, 0);
+  width: 800px;
+  height: 500px;
+  border: 2px solid rgb(90, 24, 134);
+  margin: 80px auto;
+  position: relative;
+}
+.sobreporleft {
+  position: absolute;
+  left: 70px;
+  width: 330px;
+  z-index: 10;
+  margin: 20px;
+}
+.sobreportitulo {
+  position: absolute;
+  z-index: 10;
+  left: 650px;
+}
+.escondido {
+  display: none;
+}
 .decoracaofundo {
   opacity: 0.4;
-
 }
 #vermais1 {
     background-color: rgb(71, 37, 93);
@@ -29,18 +53,15 @@ body {
   display: block;
   animation: 3s slideLeft ease-out;
 }
-
 .texto-foto {
   color: rgb(218, 196, 255);
   animation: 3s slideLeft ease-out;
 }
-
 .dados {
   font-size: 20px;
   line-height: 1.6;
   margin: 12px 0 0;
 }
-
 .texto-final {
   overflow: hidden;
   border-right: 2px solid rgb(23, 48, 58);
@@ -49,13 +70,17 @@ body {
   font-size: 20px;
   animation: typing 3s steps(100, end) forwards, blink-caret 3s step-end infinite;
 }
-
+.sobremimtexto {
+  font-size: 28px;
+  text-align: left;
+  margin: 100px;
+  font-weight: 100;
+}
 .titulo {
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script";
   font-size: 90px;
   margin: 20px 0 0;
 }
-
 @keyframes typing {
   from {
     width: 0;
@@ -64,13 +89,11 @@ body {
     width: 56ch;
   }
 }
-
 @keyframes blink-caret {
   50% {
     border-color: transparent;
   }
 }
-
 @keyframes slideLeft {
   from {
     transform: translateX(800px);
