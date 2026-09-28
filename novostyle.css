@@ -13,20 +13,48 @@ body {
   justify-content: center;
   text-align: center;
 }
+.sobreporright {
+  position: absolute;
+  right: 70px;
+  width: 290px;
+  z-index: 10;
+  margin: 20px;
+}
+.retanguloqualidades {
+  background-color: rgb(0, 0, 0);
+  width: 800px;
+  height: 500px;
+  border: 2px solid rgb(90, 24, 134);
+  margin: 80px;
+  position: relative;
+  top: 160px;
+}
+.retanguloobjetivos {
+  background-color: rgb(0, 0, 0);
+  width: 800px;
+  height: 500px;
+  border: 2px solid rgb(90, 24, 134);
+  margin: 80px;
+  position: relative;
+  top: 80px;
+}
 .retangulosobremim {
   background-color: rgb(0, 0, 0);
   width: 800px;
   height: 500px;
   border: 2px solid rgb(90, 24, 134);
-  margin: 80px auto;
+  margin: 80px;
   position: relative;
 }
 .sobreporleft {
   position: absolute;
-  left: 70px;
+  left: 60px;
   width: 330px;
   z-index: 10;
   margin: 20px;
+}
+.problema {
+  padding-top: 80px;
 }
 .sobreportitulo {
   position: absolute;
@@ -41,7 +69,7 @@ body {
 }
 #vermais1 {
     background-color: rgb(71, 37, 93);
-    color: white;
+    color: rgb(218, 196, 255);
     width: 340px;
     height: 54px;
     border-radius: 10px;
@@ -56,6 +84,10 @@ body {
 .texto-foto {
   color: rgb(218, 196, 255);
   animation: 3s slideLeft ease-out;
+}
+.texto-foto-right {
+  color: rgb(218, 196, 255);
+  animation: 3s slideRight ease-out;
 }
 .dados {
   font-size: 20px;
@@ -97,6 +129,16 @@ body {
 @keyframes slideLeft {
   from {
     transform: translateX(800px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-800px);
     opacity: 0;
   }
   to {
